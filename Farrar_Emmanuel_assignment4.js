@@ -40,7 +40,7 @@ var validEmail = function (myEmail)
 	var foundAtPosition;
 	foundAtPosition = myEmail.indexOf("@");
 	
-	//console.log(myDotCom);
+	//using the redefined variable to identify the "." and a way to identify the "@"
 	if (myDotCom[0] ==="." && foundAtPosition != -1)
 	{
 		console.log ("Valid Email");
@@ -50,6 +50,21 @@ var validEmail = function (myEmail)
 	
 };
 
+//Is the string a URL (Does it start with http:// or https://?
+var validUrl = function (enteredUrl)
+{
+	var subValidUrl = enteredUrl.substring(0,4);
+	console.log(subValidUrl);
+	var subValidUrl2 = enteredUrl.substring(0,5);
+	
+	if (subValidUrl === "http" ||subValidUrl2 === "https")
+		{
+		console.log("Congrats");
+		}else{
+		console.log("Loser")
+		}
+	
+};
 
 
 //main code
@@ -57,4 +72,6 @@ var validEmail = function (myEmail)
 //function call for thePhoneNum
 thePhoneNum("123-456-7890");
 //function call for the validEmail function
-validEmail ("javascript@gmail.com");
+validEmail("javascript@gmail.com");
+//function call for the validUrl function
+validUrl("http://nike.com");
