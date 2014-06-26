@@ -32,9 +32,29 @@ var thePhoneNum = function (phoneStr)
 	return phoneStr;
 };
 
+//Does the string follow aaa@bbb.ccc pattern like an email address
+var validEmail = function (myEmail)
+{
+	var lengthOfEmail = myEmail.length;
+	var myDotCom = myEmail.substring(myEmail.length - 4);
+	var foundAtPosition;
+	foundAtPosition = myEmail.indexOf("@");
+	
+	//console.log(myDotCom);
+	if (myDotCom[0] ==="." && foundAtPosition != -1)
+	{
+		console.log ("Valid Email");
+		} else {
+		console.log("Next time try a valid email");
+		}
+	
+};
+
 
 
 //main code
 
 //function call for thePhoneNum
 thePhoneNum("123-456-7890");
+//function call for the validEmail function
+validEmail ("javascript@gmail.com");
