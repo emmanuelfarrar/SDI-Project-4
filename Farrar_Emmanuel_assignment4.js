@@ -66,6 +66,15 @@ var validUrl = function (enteredUrl)
 	
 };
 
+//Format a number to use a specific number of decimals places as for money: 2.1-->2.10
+var decimalPlace = function (num1, num2)
+{
+	var useNumber = num1;
+	useNumber = useNumber.toFixed(num2);
+	console.log(useNumber);
+};
+
+
 
 //main code
 
@@ -75,3 +84,5 @@ thePhoneNum("123-456-7890");
 validEmail("javascript@gmail.com");
 //function call for the validUrl function
 validUrl("http://nike.com");
+//fucntion call for decimalPlace function
+decimalPlace(10.15552, 2);
