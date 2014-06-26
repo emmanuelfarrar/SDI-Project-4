@@ -74,7 +74,13 @@ var decimalPlace = function (num1, num2)
 	console.log(useNumber);
 };
 
-
+//Given a string version of a number, such as "42", return the value as an actual Number data type, such as 42.
+var stringToNumber = function (strNumber)
+{
+var theString;
+theString = parseInt(strNumber);
+console.log("The number is " + theString);
+};
 
 //main code
 
@@ -86,3 +92,5 @@ validEmail("javascript@gmail.com");
 validUrl("http://nike.com");
 //fucntion call for decimalPlace function
 decimalPlace(10.15552, 2);
+//function call for isThisANum
+stringToNumber("250");
