@@ -3,7 +3,7 @@
 //SDI - 1406 - Week 4 Assignment
 
 //global variable
-
+var wordCaseReturn;
 
 
 
@@ -82,6 +82,15 @@ theString = parseInt(strNumber);
 console.log("The number is " + theString);
 };
 
+//Title-case a string (split into words, then uppercase the first letter of each word).
+var wordCase = function (someString)
+{
+var firstLetter = someString.substring(0,1).toUpperCase();
+var secondCap = someString.substring(5,6).toUpperCase();
+console.log(firstLetter + secondCap);
+return firstLetter;
+};
+
 //main code
 
 //function call for thePhoneNum
@@ -94,3 +103,6 @@ validUrl("http://nike.com");
 decimalPlace(10.15552, 2);
 //function call for isThisANum
 stringToNumber("250");
+//function call for wordCase function
+wordCaseReturn = wordCase("bed time");
+
