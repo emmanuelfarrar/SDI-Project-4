@@ -11,8 +11,6 @@ var strToNumReturn
 var wordCaseReturn;
 
 
-
-
 //functions
 
 //Does a string follow a 123-456-7890 pattern like a phone number?
@@ -24,10 +22,10 @@ var thePhoneNum = function (phoneStr)
 	
 	if (lengthOfPhone === 12 && firstDash === "-" && secondDash ==="-")
 	{
-		console.log("The number " +phoneStr +" is a valid phone number.")
+		console.log("The number " + phoneStr +" is a valid phone number.")
 		return true;
 	}else {
-		console.log("The number " +phoneStr +" is not Not a valid phone number.");
+		console.log("The number " + phoneStr +" is not Not a valid phone number.");
 		return false;
 	};
 };
@@ -56,7 +54,6 @@ var validEmail = function (myEmail)
 var validUrl = function (enteredUrl)
 {
 	var subValidUrl = enteredUrl.substring(0,4);
-	console.log(subValidUrl);
 	var subValidUrl2 = enteredUrl.substring(0,5);
 	
 	if (subValidUrl === "http" ||subValidUrl2 === "https")
